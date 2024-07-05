@@ -1,47 +1,67 @@
 <!DOCTYPE html>
 <html lang="en es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encriptador</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <h1>Encriptador Online</h1>
 
     <header>
-        <div class="logo"><img src="./assets/logo.jpg" alt=""></div>
+      <div class="logo"><img src="./assets/iconoAlura.png" alt="" /></div>
     </header>
 
     <main>
-        <section>
-            <div class="texto__ingresado">
-                <textarea placeholder="Ingrese el texto aquí"></textarea>
-            </div>
+      <section class="seccion__texto__ingresado">
+       
+          <textarea placeholder="Ingrese el texto aquí"></textarea>
 
-            <div>
-                <span> ! Sólo letras minúsculas y sin acentos</span>
-            </div>
+        
+            <div class="span__encriptado">
+                <span> ! Sólo letras minúsculas y sin acentos</span></div>
+                <div class="botones__encriptado">
+          <button id="id__boton__encriptar" class="boton__encriptar" onclick="encriptarTexto();">Encriptar</button>
+          <button id="id__boton__desencriptar" class="boton__desencriptar" onclick="desencriptarTexto();">Desencriptar</button>
+        </div>
+      </section>
 
-            <div class="botones__encriptado">
-                <button>Encriptar</button>
-                <button>Desencriptar</button>
-            </div>       
-        </section>
+      <section id="id__seccion__resultado" class="seccion__resultado">
+        <img id="ocultar__img" src="./assets/sinMensaje.png" alt="" />
+        <div id="id__contenedor__span__resultado" class="contenedor__span__resultado">
+          <p>
+            <span class="span1__resultado">Ningún mensaje fue encontrado </span>
+            <br /><br />
+            <span class="span2__resultado"
+              >Ingresa el texto que desees encriptar o desencriptar.
+            </span>
+          </p>
+        </div>
 
-        <section>
-            <div class="seccion__resultado">
-                <img src="./assets/sinMensaje.png" alt="">
-            </div>
-        </section>
+        <button id="id__boton__oculto" class="boton__oculto" onclick="copiarTexto();">Copiar</button>
+      </section>
     </main>
     <footer>
-        <span>Gustavo</span>
-        <span>Todos los derechos reservados</span>
-        <span>Argentina</span>
-        <span>Alura, proyecto ONE</span>
+      <ul>
+        <li><span>Gustavo Corda</span></li>
+        <li><span>Argentina</span></li>
+        <li><span>Alura, proyecto ONE</span></li>
+        <li><span>Todos los derechos reservados. EncriptadorONE&reg;</span></li>
+      </ul>
+      
+      
+      
+      
     </footer>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
