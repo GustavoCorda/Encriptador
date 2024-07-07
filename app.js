@@ -1,14 +1,13 @@
 let textoIngresado = "";
 let textoAMostrar = "";
 
-
 function encriptarTexto(){
 
     let textoIngresado = document.querySelector('textarea').value;
-const caracteres = Array.from(textoIngresado);
+let caracteres = Array.from(textoIngresado);
 
 
-const textoEncriptado = caracteres.map(caracteres => {
+let textoEncriptado = caracteres.map(caracteres => {
     if (caracteres === "a"){
         return "ai";
         }
@@ -30,23 +29,18 @@ const textoEncriptado = caracteres.map(caracteres => {
 }) .join('');
 console.log(textoEncriptado);
 
-const spanEncriptado = document.getElementById('id__contenedor__span__resultado');
-const section = document.getElementById('id__seccion__resultado');
+let spanEncriptado = document.getElementById('id__contenedor__span__resultado');
+let section = document.getElementById('id__seccion__resultado');
 section.style.textAlign = "center";
-section.style.justifyContent = "normal";
-section.style.paddingTop = "15px";
-section.textContent = textoEncriptado;
+section.style.justifyContent = "space-between";
+section.style.padding = "15px 10px";
+// spanEncriptado.style.height = "500px";
+spanEncriptado.textContent = textoEncriptado;
 
-const imgOculta = document.getElementById('ocultar__img');
+let imgOculta = document.getElementById('ocultar__img');
 imgOculta.style.display = "none";
-
-
-
-document.addEventListener("DOMContentLoaded", function() {
-   const botonOculto = document.getElementById('id__boton__oculto');
-   botonOculto.style.display = "block";
-});
-
+botonCopiar = document.getElementById('id__boton__oculto');
+botonCopiar.style.display = "block";
 
 // hola soy el loquito
 
@@ -79,6 +73,7 @@ const textoDesencriptado = caracteres.map(caracteres => {
 
 }) .join('');
 
+console.log(caracteres);
 
 
 }
