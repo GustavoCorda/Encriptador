@@ -1,4 +1,4 @@
- Encriptador Online 
+  <h1 align="center">Encriptador Online</h1>
 Requisitos:
 -Solamente funciona con letras minúsculas.
 -No se admite el uso de letras con acentos ni carácteres especiales.
