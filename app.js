@@ -34,6 +34,7 @@ function cambiarSeccionResultado(texto){
     section.style.padding = "15px 10px";
 
     spanEncriptado.textContent = texto;
+    spanEncriptado.style.overflowY = "auto";
     imgOculta.style.display = "none";
     botonCopiar.style.visibility = "visible";
 }

@@ -13,6 +13,8 @@ header{
     text-align: left;
 }
 
+
+
 main{
     display: flex;
     justify-content: space-around;
@@ -79,8 +81,10 @@ button{
     color: darkblue;
     border: 1px solid darkblue;
     visibility: hidden;
-    margin-bottom: 24px;
+    margin: 13px auto 1px;  
 }
+
+
 
 .seccion__resultado{
     display: flex;
@@ -92,7 +96,7 @@ button{
     height: 384px;
     padding: 2px 5px 4px;
     background-color: white;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     word-wrap: break-word; 
     overflow-wrap: break-word; 
 }
@@ -100,6 +104,9 @@ button{
 .contenedor__span__resultado{
     font-family: "Inter", sans-serif;
     text-align: center;
+    width: 85%;
+    /* overflow-y: auto; */
+    margin: auto 5px;
 }
 
 .span1__resultado{
@@ -109,6 +116,7 @@ button{
 
 .span2__resultado{
     font-size: 1rem;
+    height: 180px;
 }
 
 footer{
@@ -116,8 +124,71 @@ footer{
     color: white;
     text-align: start;
     font-size: 0.6rem;
+    width: 100vw;
+    margin-top: 20px;
+    clear: both;
 }
 
 li{
    list-style: none;
 }
+
+
+/* ######### Medias Queries ######### */
+
+
+@media (max-width: 480px) {
+    main{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    section{
+        flex: 1;
+    }
+    .seccion__texto__ingresado{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    textarea{
+        height: 300px;
+    }
+
+    .botones__encriptado{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+   button{
+   width:300px;
+   margin: 8px auto;
+   }
+   
+   .contenedor__span__resultado{  
+    max-height: 200px;
+    padding: 0px;
+}
+
+
+   .seccion__resultado{
+    max-height: 200px;
+    width: 320px;
+    padding: 0px;
+   
+}
+
+    #ocultar__img{
+        display: none;
+    }
+
+  }
+  
+
+  @media (min-width: 481px) and (max-width: 768px) {
+   
+  }
