@@ -35,4 +35,24 @@
   <img src="https://github.com/user-attachments/assets/aec2896f-f57d-46e1-b394-b29a195935f9" alt="captura del viewport mostrando el 'alert' que nos devuelve la aplicación luego de utilizar el botón COPIAR">
 </p>
 
+<h2 align="center"> Pantallas más pequeñas </h2>
+<h3 align="center"> Main en pantalla tipo Tablet hasta 768px </h3>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8899cd07-b6cf-496b-9788-61a94f09c007" alt="captura del viewport mostrando el main para pantallas tipo tablet">
+</p>
+
+<h3 align="center"> Encriptado en pantalla tipo Tablet hasta 768px </h3>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2ce34193-cf3a-4708-82ad-4b15018abb42" alt="captura del viewport mostrando un ejemplo de cómo se visualiza el texto ingresado y la devolución del texto encriptado, en pantallas tipo tablet">
+</p>
+
+<h3 align="center"> Main en pantalla tipo celulares hasta 480px </h3>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/eb0953b8-ad07-4a71-a126-2d32ebae4a1b" alt="captura del viewport mostrando el main para pantallas tipo celulares">
+</p>
+
+<h3 align="center"> Encriptado en pantalla tipo celulares hasta 480px </h3>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2a3d17b3-0871-480b-9b72-851b5283e783" alt="captura del viewport mostrando un ejemplo de cómo se visualiza el texto ingresado y la devolución del texto encriptado, en pantallas tipo celulares">
+</p>
 Este proyecto fue realizado por Gustavo Corda, como ejercicio para ser evaluado en el Proyecto ONE dictado en conjunto por Alura y Oracle.
