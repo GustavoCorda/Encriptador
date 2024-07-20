@@ -13,7 +13,9 @@ header{
     text-align: left;
 }
 
-
+span{
+    color: #495057;
+}
 
 main{
     display: flex;
@@ -31,13 +33,16 @@ main{
 
 
 textarea{
+    color: #0A3871;
     background-color: #F3F5FC;
     resize: none;
     overflow: auto;
     border: none;
     font-size: 2rem;
     outline: none;
+    width: 98%;
     height: 650px;
+    padding: 15px;
 }
 
 .span__encriptado span{
@@ -58,6 +63,7 @@ textarea{
 
 
 button{
+    background-color: #D8DFE8;
     text-align: center;
     border-radius: 1.5rem;
     font-size: 1rem;
@@ -71,13 +77,11 @@ button{
     color: white;
 }
 .boton__desencriptar{
-    background-color: #d8dfd8;
     color: darkblue;
     border: 1px solid darkblue;
 }
 
 .boton__oculto{
-    background-color: #d8dfd8;
     color: darkblue;
     border: 1px solid darkblue;
     visibility: hidden;
@@ -129,6 +133,10 @@ footer{
     clear: both;
 }
 
+footer span{
+    color: white;
+}
+
 li{
    list-style: none;
 }
@@ -137,7 +145,7 @@ li{
 /* ######### Medias Queries ######### */
 
 
-@media (max-width: 480px) {
+  @media (max-width: 768px) {
     main{
         flex-direction: column;
         justify-content: space-around;
@@ -146,6 +154,7 @@ li{
     
     section{
         flex: 1;
+        width: 95%;
     }
     .seccion__texto__ingresado{
         display: flex;
@@ -155,18 +164,24 @@ li{
     }
 
     textarea{
-        height: 300px;
+        align-self: flex-start;
+        height: 600px;
+        max-height: 600px;
     }
-
+    
+    .span__encriptado{
+        align-self: flex-start;
+    }
     .botones__encriptado{
-        flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        align-self: center;
     }
     
    button{
+   background-color: transparent;
    width:300px;
-   margin: 8px auto;
+   margin: 8px 12px;
    }
    
    .contenedor__span__resultado{  
@@ -176,19 +191,89 @@ li{
 
 
    .seccion__resultado{
-    max-height: 200px;
-    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    max-height: 120px;
+    margin: 20px 5px 0px;
     padding: 0px;
-   
+    font-size: 1.5rem;
 }
 
-    #ocultar__img{
+.seccion__resultado__aux{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    max-height: 200px;
+    margin: 20px 5px 0px;
+    padding: 0px;
+    font-size: 1.5rem;
+}
+
+.boton__oculto{
+    width: 585px;
+}
+
+    #ocultar__img{ 
         display: none;
     }
 
-  }
-  
+    footer{
+        margin-top: 0px;
+        font-size: 0.8rem;
+    }
 
-  @media (min-width: 481px) and (max-width: 768px) {
    
+  }
+
+  @media (max-width: 480px) {
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    textarea{
+        height: 300px;
+    }
+
+    .botones__encriptado{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+   button{
+   width:300px;
+   margin: 8px auto;
+   }
+   
+   .contenedor__span__resultado{ 
+    width:auto; 
+    max-width: 300px;
+    max-height: 500px;
+    padding: 15px;
+    overflow-x: hidden;
+}
+
+
+   .seccion__resultado{
+    max-height: 200px;
+    width: 320px;
+}
+
+.seccion__resultado__aux{
+    max-height: 450px;
+    width: 320px;
+}
+
+.contenedor__boton__oculto{
+    width: 80%;
+}
+
+.boton__oculto{
+    width: 100%;
+}
+
   }

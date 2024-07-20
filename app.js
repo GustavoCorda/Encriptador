@@ -32,9 +32,10 @@ function cambiarSeccionResultado(texto){
     section.style.textAlign = "center";
     section.style.justifyContent = "space-between";
     section.style.padding = "15px 10px";
+    section.className= "seccion__resultado__aux"
 
     spanEncriptado.textContent = texto;
-    spanEncriptado.style.overflowY = "auto";
+    spanEncriptado.style.overflowY = "auto"; 
     imgOculta.style.display = "none";
     botonCopiar.style.visibility = "visible";
 }
